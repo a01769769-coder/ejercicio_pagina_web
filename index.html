@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -183,81 +183,103 @@
       </div>
     </div>
   </section>
-
   <!-- ─── LIBROS MÁS POPULARES ──────────────────────── -->
-  <section id="libros">
-    <div class="texto reveal">
-      <p class="chapter-label">Capítulo V</p>
-      <h2>Los libros más valorados</h2>
-      <p>Estos son los títulos con mayor interés promedio entre los 30 lectores encuestados, calculado con promedio bayesiano sobre una escala del 2 al 6.</p>
+<section id="libros">
+  <div class="texto reveal">
+    <p class="chapter-label">Capítulo V</p>
+    <h2>Los libros más valorados</h2>
+    <p>Estos son los títulos con mayor interés promedio entre los 30 lectores encuestados, calculado con promedio bayesiano sobre una escala del 2 al 6.</p>
+  </div>
+
+  <div class="books-grid reveal">
+
+    <div class="book-card">
+      <div class="book-spine" style="background:#1a1410;">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/9780439708180-L.jpg"
+          alt="Portada Harry Potter"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;opacity:.92;"
+        >
+        <span>Harry Potter and the Philosopher's Stone</span>
+      </div>
+      <p class="book-title">Harry Potter</p>
+      <p class="book-author">J.K. Rowling</p>
+      <div class="book-score">
+        <div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div>
+        4.75
+      </div>
     </div>
 
-    <div class="books-grid reveal">
-
-      <div class="book-card">
-        <div class="book-spine spine-red">
-          <span>Harry Potter and the Philosopher's Stone</span>
-        </div>
-        <p class="book-title">Harry Potter</p>
-        <p class="book-author">J.K. Rowling</p>
-        <div class="book-score">
-          <div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div>
-          4.75
-        </div>
+    <div class="book-card">
+      <div class="book-spine" style="background:#1a3320;">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/9780147514011-L.jpg"
+          alt="Portada Little Women"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;opacity:.92;"
+        >
+        <span>Little Women</span>
       </div>
-
-      <div class="book-card">
-        <div class="book-spine spine-forest">
-          <span>Little Women</span>
-        </div>
-        <p class="book-title">Little Women</p>
-        <p class="book-author">Louisa May Alcott</p>
-        <div class="book-score">
-          <div class="score-bar-wrap"><div class="score-bar" style="width:77%"></div></div>
-          4.62
-        </div>
+      <p class="book-title">Little Women</p>
+      <p class="book-author">Louisa May Alcott</p>
+      <div class="book-score">
+        <div class="score-bar-wrap"><div class="score-bar" style="width:77%"></div></div>
+        4.62
       </div>
-
-      <div class="book-card">
-        <div class="book-spine spine-navy">
-          <span>Pride and Prejudice</span>
-        </div>
-        <p class="book-title">Pride and Prejudice</p>
-        <p class="book-author">Jane Austen</p>
-        <div class="book-score">
-          <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
-          4.53
-        </div>
-      </div>
-
-      <div class="book-card">
-        <div class="book-spine spine-teal">
-          <span>The Secret Garden</span>
-        </div>
-        <p class="book-title">The Secret Garden</p>
-        <p class="book-author">Frances H. Burnett</p>
-        <div class="book-score">
-          <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
-          4.50
-        </div>
-      </div>
-
-      <div class="book-card">
-        <div class="book-spine spine-plum">
-          <span>The Hunger Games</span>
-        </div>
-        <p class="book-title">The Hunger Games</p>
-        <p class="book-author">Suzanne Collins</p>
-        <div class="book-score">
-          <div class="score-bar-wrap"><div class="score-bar" style="width:74%"></div></div>
-          4.48
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <div class="ornament reveal" aria-hidden="true">✦ ✦ ✦</div>
+    <div class="book-card">
+      <div class="book-spine" style="background:#1a2744;">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+          alt="Portada Pride and Prejudice"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;opacity:.92;"
+        >
+        <span>Pride and Prejudice</span>
+      </div>
+      <p class="book-title">Pride and Prejudice</p>
+      <p class="book-author">Jane Austen</p>
+      <div class="book-score">
+        <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
+        4.53
+      </div>
+    </div>
+
+    <div class="book-card">
+      <div class="book-spine" style="background:#0d3535;">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/9780064401883-L.jpg"
+          alt="Portada The Secret Garden"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;opacity:.92;"
+        >
+        <span>The Secret Garden</span>
+      </div>
+      <p class="book-title">The Secret Garden</p>
+      <p class="book-author">Frances H. Burnett</p>
+      <div class="book-score">
+        <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
+        4.50
+      </div>
+    </div>
+
+    <div class="book-card">
+      <div class="book-spine" style="background:#3d1a3d;">
+        <img
+          src="https://covers.openlibrary.org/b/isbn/9780439023481-L.jpg"
+          alt="Portada The Hunger Games"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;opacity:.92;"
+        >
+        <span>The Hunger Games</span>
+      </div>
+      <p class="book-title">The Hunger Games</p>
+      <p class="book-author">Suzanne Collins</p>
+      <div class="book-score">
+        <div class="score-bar-wrap"><div class="score-bar" style="width:74%"></div></div>
+        4.48
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- ─── GÉNEROS ────────────────────────────────────── -->
   <section id="generos">
