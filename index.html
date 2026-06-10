@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos Literarios — Recomendador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- ─── NAV ──────────────────────────────────────── -->
+<nav class="site-nav">
+  <span class="nav-brand">Datos <span>Literarios</span></span>
+  <ul class="nav-links">
+    <li><a href="#que-es">¿Qué es?</a></li>
+    <li><a href="#como-funciona">Cómo funciona</a></li>
+    <li><a href="#datos">Datos</a></li>
+    <li><a href="#libros">Libros</a></li>
+    <li><a href="#generos">Géneros</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker">Sistema de recomendación literaria</p>
+    <h1>Tu próximo<br><em>libro favorito</em><br>ya existe.</h1>
+    <p class="tagline">
+      Un algoritmo que analiza los patrones de lectura de 30 personas para descubrir qué libros podrían interesarte, basándose en lo que ya has leído y disfrutado.
+    </p>
+    <a href="#que-es" class="hero-cta">Descubrir cómo funciona</a>
+  </div>
+  <div class="hero-deco" aria-hidden="true">§</div>
+</header>
+
+<!-- ─── MAIN ─────────────────────────────────────── -->
+<main>
+
+  <!-- STATS RÁPIDOS -->
+  <div class="stat-strip reveal">
+    <div class="stat-item">
+      <span class="stat-num">31</span>
+      <span class="stat-label">obras clásicas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">30</span>
+      <span class="stat-label">lectores encuestados</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">712</span>
+      <span class="stat-label">calificaciones registradas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">4.21</span>
+      <span class="stat-label">interés promedio / 6</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">10</span>
+      <span class="stat-label">géneros literarios</span>
+    </div>
+  </div>
+
+  <!-- ─── QUÉ ES ───────────────────────────────────── -->
+  <section id="que-es" class="texto reveal">
+    <p class="chapter-label">Capítulo I</p>
+    <h2>¿Qué es un recomendador literario?</h2>
+    <p class="lead">Un sistema que encuentra el siguiente libro que querrás leer, antes de que tú lo sepas.</p>
+    <p>
+      Un recomendador literario es un sistema que analiza patrones de calificación para encontrar conexiones entre libros. No lee las novelas, no conoce los personajes ni las tramas — pero sí sabe que las personas que aman Harry Potter también tienden a dar altas calificaciones a The Hunger Games.
+    </p>
+    <p>
+      Eso es el <strong>filtrado colaborativo</strong>: usar la inteligencia colectiva de muchos lectores para hacer recomendaciones personalizadas. El mismo principio que usan plataformas como Spotify o Netflix, aplicado al mundo de los libros.
+    </p>
+  </section>
+
+  <div class="ornament reveal" aria-hidden="true">✦ ✦ ✦</div>
+
+  <!-- ─── CÓMO FUNCIONA ─────────────────────────────── -->
+  <section id="como-funciona">
+    <div class="texto reveal">
+      <p class="chapter-label">Capítulo II</p>
+      <h2>¿Cómo funciona?</h2>
+      <p>El sistema sigue cuatro pasos simples para convertir tus gustos en recomendaciones concretas.</p>
+    </div>
+
+    <div class="how-steps reveal">
+      <div class="how-step">
+        <h3>Calificar libros</h3>
+        <p>Los lectores califican las obras que conocen en una escala del 2 al 6, desde "no me interesa" hasta "me interesa mucho". Los libros desconocidos se omiten.</p>
+      </div>
+      <div class="how-step">
+        <h3>Construir patrones</h3>
+        <p>Las calificaciones de los 30 lectores forman una matriz de 31 × 30. Cada libro queda representado como un vector numérico que captura cómo fue percibido por la comunidad.</p>
+      </div>
+      <div class="how-step">
+        <h3>Medir similitudes</h3>
+        <p>El algoritmo calcula la <em>distancia coseno</em> entre los vectores de cada libro. Si dos libros fueron calificados de forma parecida por las mismas personas, son considerados similares.</p>
+      </div>
+      <div class="how-step">
+        <h3>Recomendar</h3>
+        <p>A partir de un libro que te gustó, el sistema devuelve los títulos más cercanos. O bien, analiza todos tus libros favoritos y genera una lista personalizada solo para ti.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CITA LITERARIA -->
+  <div class="book-quote reveal">
+    <blockquote>
+      "No hay ningún amigo tan leal como un libro."
+      <cite>— Ernest Hemingway</cite>
+    </blockquote>
+  </div>
+
+  <!-- ─── PARA QUÉ SIRVE ────────────────────────────── -->
+  <section>
+    <div class="texto reveal">
+      <p class="chapter-label">Capítulo III</p>
+      <h2>¿Para qué sirve?</h2>
+      <p>El recomendador puede ayudarte de tres maneras distintas, dependiendo de lo que necesites.</p>
+    </div>
+
+    <div class="modulo modulo-tres reveal">
+
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3>Encontrar tu próxima lectura</h3>
+        <p>Dinos un libro que hayas disfrutado y el sistema encuentra los títulos que lectores similares a ti también calificaron alto. Sin spoilers, solo afinidades.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🗺️</div>
+        <h3>Explorar géneros nuevos</h3>
+        <p>Si siempre lees Romance o Fantasía, el recomendador puede mostrarte títulos de Distopía, Misterio o Novela histórica que comparten audiencia con tus favoritos.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Conocer tus patrones lectores</h3>
+        <p>Al ver qué libros se recomiendan juntos, puedes entender qué elementos comparten las obras que más te gustan — más allá del género declarado.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="ornament reveal" aria-hidden="true">✦ ✦ ✦</div>
+
+  <!-- ─── DATOS QUE GENERA ──────────────────────────── -->
+  <section id="datos">
+    <div class="texto reveal">
+      <p class="chapter-label">Capítulo IV</p>
+      <h2>¿Qué datos puede darte?</h2>
+      <p>El sistema no solo recomienda. También genera información sobre los patrones de lectura de nuestra comunidad.</p>
+    </div>
+
+    <div class="modulo modulo-doble reveal">
+      <div>
+        <div class="feature-card" style="margin-bottom:1.25rem">
+          <div class="feature-icon">⭐</div>
+          <h3>Ranking de interés</h3>
+          <p>Qué libros generan mayor entusiasmo entre los lectores, calculado con un promedio bayesiano que da más peso a los libros con más calificaciones. Harry Potter lidera con <strong>4.75 / 6</strong>.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Libros similares</h3>
+          <p>Para cualquier título de los 31, el sistema calcula los 5 más parecidos según los patrones de 30 lectores. La similitud oscila entre 0.84 y 0.93 en nuestros datos.</p>
+        </div>
+      </div>
+      <div>
+        <div class="feature-card" style="margin-bottom:1.25rem">
+          <div class="feature-icon">👤</div>
+          <h3>Lista personalizada</h3>
+          <p>A partir de los libros que un usuario calificó con 4 o más, el sistema genera una lista ordenada por un <em>score</em> que combina qué tanto le gustó el libro base y qué tan similares son las nuevas recomendaciones.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Tendencias de la muestra</h3>
+          <p>El 37 % de los lectores prefiere Romance, el 13 % Fantasía. Esta distribución moldea las recomendaciones y muestra los sesgos del grupo encuestado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LIBROS MÁS POPULARES ──────────────────────── -->
+  <section id="libros">
+    <div class="texto reveal">
+      <p class="chapter-label">Capítulo V</p>
+      <h2>Los libros más valorados</h2>
+      <p>Estos son los títulos con mayor interés promedio entre los 30 lectores encuestados, calculado con promedio bayesiano sobre una escala del 2 al 6.</p>
+    </div>
+
+    <div class="books-grid reveal">
+
+      <div class="book-card">
+        <div class="book-spine spine-red">
+          <span>Harry Potter and the Philosopher's Stone</span>
+        </div>
+        <p class="book-title">Harry Potter</p>
+        <p class="book-author">J.K. Rowling</p>
+        <div class="book-score">
+          <div class="score-bar-wrap"><div class="score-bar" style="width:79%"></div></div>
+          4.75
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-spine spine-forest">
+          <span>Little Women</span>
+        </div>
+        <p class="book-title">Little Women</p>
+        <p class="book-author">Louisa May Alcott</p>
+        <div class="book-score">
+          <div class="score-bar-wrap"><div class="score-bar" style="width:77%"></div></div>
+          4.62
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-spine spine-navy">
+          <span>Pride and Prejudice</span>
+        </div>
+        <p class="book-title">Pride and Prejudice</p>
+        <p class="book-author">Jane Austen</p>
+        <div class="book-score">
+          <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
+          4.53
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-spine spine-teal">
+          <span>The Secret Garden</span>
+        </div>
+        <p class="book-title">The Secret Garden</p>
+        <p class="book-author">Frances H. Burnett</p>
+        <div class="book-score">
+          <div class="score-bar-wrap"><div class="score-bar" style="width:75%"></div></div>
+          4.50
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-spine spine-plum">
+          <span>The Hunger Games</span>
+        </div>
+        <p class="book-title">The Hunger Games</p>
+        <p class="book-author">Suzanne Collins</p>
+        <div class="book-score">
+          <div class="score-bar-wrap"><div class="score-bar" style="width:74%"></div></div>
+          4.48
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="ornament reveal" aria-hidden="true">✦ ✦ ✦</div>
+
+  <!-- ─── GÉNEROS ────────────────────────────────────── -->
+  <section id="generos">
+    <div class="texto reveal">
+      <p class="chapter-label">Capítulo VI</p>
+      <h2>Géneros que el recomendador conoce</h2>
+      <p>Los 31 libros del catálogo abarcan diez géneros literarios distintos. El sistema puede encontrar conexiones entre todos ellos, incluso entre géneros que parecen opuestos.</p>
+    </div>
+
+    <div class="genre-cloud reveal">
+      <span class="genre-badge"><span class="dot dot-red"></span>Romance</span>
+      <span class="genre-badge"><span class="dot dot-navy"></span>Fantasía</span>
+      <span class="genre-badge"><span class="dot dot-plum"></span>Terror</span>
+      <span class="genre-badge"><span class="dot dot-forest"></span>Misterio</span>
+      <span class="genre-badge"><span class="dot dot-teal"></span>Ciencia ficción</span>
+      <span class="genre-badge"><span class="dot dot-gold"></span>Drama</span>
+      <span class="genre-badge"><span class="dot dot-brown"></span>Distopía</span>
+      <span class="genre-badge"><span class="dot dot-red"></span>Novela histórica</span>
+      <span class="genre-badge"><span class="dot dot-navy"></span>Aventura</span>
+      <span class="genre-badge"><span class="dot dot-plum"></span>Clásicos</span>
+    </div>
+
+    <div class="modulo modulo-doble reveal">
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Conexiones inesperadas</h3>
+        <p>El recomendador descubrió que lectores que disfrutaron <em>Frankenstein</em> (Terror/Ciencia ficción) también calificaron alto <em>Harry Potter</em> (Fantasía). No porque sean similares en trama, sino porque comparten una audiencia curiosa e imaginativa.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌱</div>
+        <h3>Géneros por descubrir</h3>
+        <p>Distopía y Novela histórica son los géneros menos representados entre los encuestados. Ahí está la oportunidad: el sistema puede introducirlos a través de títulos que ya conoces, como puerta de entrada a territorios nuevos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGUNDA CITA -->
+  <div class="book-quote reveal">
+    <blockquote>
+      "Un lector vive mil vidas antes de morir. El hombre que nunca lee vive solo una."
+      <cite>— George R.R. Martin</cite>
+    </blockquote>
+  </div>
+
+  <!-- ─── CÓMO NOS PUEDE AYUDAR (cierre) ──────────────── -->
+  <section class="texto reveal" style="max-width:100%">
+    <p class="chapter-label">Epílogo</p>
+    <h2>Más que una lista de libros</h2>
+    <div class="modulo modulo-doble" style="margin-top:1rem">
+      <div>
+        <p>Un recomendador literario no reemplaza la experiencia de leer ni el criterio personal de cada lector. Lo que hace es actuar como un <strong>puente entre lo que ya conoces y lo que todavía no has descubierto</strong>.</p>
+        <p>Al analizar cómo 30 personas distintas calificaron las mismas 31 obras, el sistema revela algo que ninguna crítica literaria puede ver: los gustos reales, no declarados, de una comunidad lectora.</p>
+      </div>
+      <div>
+        <p>¿Qué pasa cuando alguien que dice preferir Romance termina calificando con 6 a <em>1984</em>? El algoritmo lo detecta. ¿Qué tienen en común <em>Dracula</em> y <em>The Hunger Games</em> para los mismos lectores? El sistema lo sabe.</p>
+        <p>Esas conexiones invisibles son el corazón del proyecto: <strong>los datos como espejo de los lectores</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Datos <span>Literarios</span></p>
+      <p class="footer-meta">Proyecto final de análisis de datos · 2026</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#datos">Datos</a>
+      <a href="#libros">Libros</a>
+      <a href="#generos">Géneros</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ─── SCROLL REVEAL SCRIPT ──────────────────────── -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
